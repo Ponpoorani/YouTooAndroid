@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nyu.youtoo.youtoo.controllers.SendMessageActivity"
+    android:id="@+id/SendMessageActivity"
+    android:background="#021029">
+
+    <!--  Header  Starts-->
+    <LinearLayout android:id="@+id/header1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/loginheader"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"></LinearLayout>
+    <!-- Logo Start-->
+    <ImageView android:src="@mipmap/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/imageView" />
+    <!-- Logo Ends -->
+
+    <Button
+        android:text="@string/seebroadcast"
+        android:id="@+id/prevbroadcast_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A80000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/header1"
+        android:layout_alignStart="@+id/see_btn"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="@dimen/EditTextHt1"
+        android:id="@+id/editMessage"
+        android:hint="@string/enter_message"
+
+        android:background="@drawable/edittextdesign"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="15"
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/see_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+
+
+    <!-- Broadcast button -->
+    <Button
+        android:text="@string/broadcast"
+        android:id="@+id/broadcast_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A80000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+    <!-- See connections button -->
+
+    <Button
+        android:text="@string/seeConnection"
+        android:id="@+id/see_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A80000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/broadcast_btn"
+        android:layout_alignStart="@+id/broadcast_btn" />
+
+</RelativeLayout>

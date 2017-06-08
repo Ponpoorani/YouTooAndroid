@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.nyu.youtoo.youtoo.controllers.HomeScreenActivity"
+android:background="#021029">
+
+<!--  Header  Starts-->
+<LinearLayout android:id="@+id/header1"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/login_header"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:layout_above="@+id/topicsList"
+    android:layout_alignParentTop="true"></LinearLayout>
+<!-- Logo Start-->
+<ImageView android:src="@mipmap/logo"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dip"
+    android:id="@+id/imageView" />
+<!-- Logo Ends -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0b84aa"
+        android:text="Hello !!"
+        android:textSize="22dip"/>
+
+<Button
+    android:text="@string/topicslist"
+    android:id="@+id/topicsList"
+    android:textColor="#FFFFFF"
+    android:textSize="30sp"
+    android:layout_width="190dp"
+    android:layout_height="60dp"
+    android:shadowColor="#A80000"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:layout_gravity="center_horizontal"
+
+
+
+    android:layout_below="@+id/imageView"
+    android:layout_alignLeft="@+id/letsConnect"
+    android:layout_marginTop="42dp" />
+
+<Button
+
+    android:textColor="#FFFFFF"
+    android:textSize="30sp"
+    android:layout_width="190dp"
+    android:layout_height="85dp"
+    android:shadowColor="#A80000"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="@string/letsconnect"
+    android:id="@+id/letsConnect"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerVertical="true"
+    android:layout_alignLeft="@+id/receivedMessages"
+    />
+
+<Button
+
+    android:textColor="#FFFFFF"
+    android:textSize="30sp"
+    android:layout_width="190dp"
+    android:layout_height="90dp"
+    android:shadowColor="#A80000"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="@string/receivedmessages"
+    android:id="@+id/receivedMessages"
+    android:layout_gravity="center_horizontal"
+
+
+    android:layout_below="@+id/letsConnect"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="37dp" />
+
+<Button
+
+    android:textColor="#FFFFFF"
+    android:textSize="30sp"
+    android:layout_width="190dp"
+    android:layout_height="60dp"
+    android:shadowColor="#A80000"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="@string/settings"
+    android:id="@+id/settings"
+    android:layout_gravity="center_horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/receivedMessages" />
+
+
+
+</RelativeLayout>
+
+

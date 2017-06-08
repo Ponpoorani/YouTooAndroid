@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nyu.youtoo.youtoo.controllers.ViewMsgReceivedActivity"
+    android:background="#021029"
+    >
+
+    <!--  Header  Starts-->
+    <LinearLayout android:id="@+id/header1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/loginheader"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/imageView"></LinearLayout>
+    <!-- Logo Start-->
+    <ImageView android:src="@mipmap/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/imageView" />
+
+    <!-- Logo Ends -->
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/header1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space1">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:id="@+id/viewMsgLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="#ffe0faff"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewButton"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
